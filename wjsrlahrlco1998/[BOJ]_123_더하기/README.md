@@ -1,4 +1,4 @@
-# [BOJ] 설탕 배달 (Silver-4)
+# [BOJ] 123 더하기 (Silver-4)
 
 > [ICPC](https://www.acmicpc.net/category/1) > [Regionals](https://www.acmicpc.net/category/7) > [Asia Pacific](https://www.acmicpc.net/category/42) > [Korea](https://www.acmicpc.net/category/211) > [Asia Regional - Taejon 2001](https://www.acmicpc.net/category/detail/884) PC번
 
