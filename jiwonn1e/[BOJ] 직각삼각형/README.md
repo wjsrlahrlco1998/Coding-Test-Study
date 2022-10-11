@@ -1,4 +1,4 @@
-# [BOJ] 최댓값
+# [BOJ] 직각삼각형
 
 [문제링크](https://www.acmicpc.net/problem/4153)
 
