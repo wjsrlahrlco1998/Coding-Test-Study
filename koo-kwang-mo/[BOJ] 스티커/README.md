@@ -1,6 +1,6 @@
-# [PGS] 스티커
+# [BOJ] 스티커
 
-> 프로그래머스 연습문제
+> 백준 연습문제
 
 [문제링크](https://www.acmicpc.net/problem/9465)
 
