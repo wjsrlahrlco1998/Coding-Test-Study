@@ -30,6 +30,8 @@
 
 ### 1) 문제의 핵심
 - DFS의 활용
+- DFS안에 재귀함수를 활용한다.
+  - 재귀 함수를 사용함으로써 한 번에 한 단지만 방문 처리를 할 수 있게 된다.
 
 +) DFS, BFS에 대한 설명
 https://cyc1am3n.github.io/2019/04/26/bfs_dfs_with_python.html
