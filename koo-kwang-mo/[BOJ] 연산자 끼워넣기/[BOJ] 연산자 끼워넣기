@@ -1,0 +1,43 @@
+n = int(input())#길이
+number = list(map(int, input().split()))#숫자리스트
+op = list(map(int, input().split()))#연산자 리스트
+minR = int(1e9)#10의 9승
+maxR = -int(1e9)#10의 -9승
+
+answer = number[0]#answer에 첫 번째 자리 숫자를 넣는다.
+
+def dfs(idx):
+    global answer
+    global minR, maxR
+
+    if idx == n:#N 단계에 들어섰을 때 모든 경우의 수가 글로벌 변수에 대하여 최대최소 연산이 진행된다.
+        if answer > maxR:
+            maxR = answer
+        if answer < minR:
+            minR = answer
+        return
+
+    for i in range(4):#n 번쨰 수에 대하여 + - x % 모든 경우의 수가 적용 될 수 있도록 for을 활용한다.
+        tmp = answer# 값이 영향 받지 않게 하기 위하여 잠시 tmp에 n-1 번쨰 값을 저장한다.
+        if op[i] > 0:
+            if i == 0:
+                answer += number[idx]
+            elif i == 1:
+                answer -= number[idx]
+            elif i == 2:
+                answer *= number[idx]
+            else:
+                if answer >= 0:
+                    answer //= number[idx]
+                else:
+                    answer = (-answer // number[idx]) * -1#음수의 경우 몫에 대해서 -1을 곱해준다.
+
+            op[i] -= 1#연산자가 1회 사용되었음
+            dfs(idx+1)#재귀함수 호출 => 다음 칸으로 진행
+            answer = tmp#n번째에서 +때 사용된 값이  -, x 등 이후 연산에 영향을 받지 않도록 다시 돌려줌
+            op[i] += 1#다른 경우의 수를 대비해 다시 더해줌
+
+
+dfs(1)
+print(maxR)
+print(minR)
