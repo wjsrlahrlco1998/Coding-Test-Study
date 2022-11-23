@@ -14,12 +14,12 @@ dy = [1, -1, 0, 0]
 
 
 def bfs(x, y):
-    queue = deque()
-    queue.append([x, y])
+    queue = deque()#BFS활용을 위한 덱 호출
+    queue.append([x, y])#리스트형태로 좌표 입력
 
     while queue:
-        x, y = queue.popleft()
-        for i in range(4):
+        x, y = queue.popleft()#가장 먼저 들어간 값 호출 => BFS
+        for i in range(4):#상하좌우 값 적용.
             nx = x + dx[i]
             ny = y + dy[i]
 
