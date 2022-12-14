@@ -16,9 +16,16 @@
 
  <img src = '그림3.JPG'>
  
+최종결과
+
+<img src = '그림6.JPG'>
+
+
  * 이해가 어려웠던 부분 해설
 
 <img src = '그림4.JPG'>
 
 
 <img src = '그림5.JPG'>
+
+출처 : https://likethefirst.tistory.com/entry/Python-%EA%B2%BD%EC%82%AC-%ED%95%98%EA%B0%95%EB%B2%95-%EC%BD%94%EB%94%A9%EC%9C%BC%EB%A1%9C-%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0
